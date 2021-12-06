@@ -1,11 +1,11 @@
-function dda(x1,y1,x2) {
+function dda(x1,y1,x2,y2) {
 	var dx = x2 - x1;
 	var dy = y2 - y1;
 
-	if ((dx)> (dy) ) {
-		var step= (dx);
+	if (Math.abs(dx)> Math.abs(dy) ) {
+		var step= Math.abs(dx);
 	}else{
-		step=(dy);
+		step=Math.abs(dy);
 	}
 
 	var x_inc = dx / step;
